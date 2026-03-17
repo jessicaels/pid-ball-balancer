@@ -27,3 +27,8 @@ This project implements a PID (Proportional–Integral–Derivative) control sys
 5. Upload the PID control program to the Arduino.
 6. Tune the PID parameters (Kp, Ki, Kd) to achieve stable balancing.
 7. Test and observe the system response to ensure the ball stays at the center.
+
+# Code
+Code Structure : 
+1. Arduino Code: `code/arduino/pid_ball_balancer.ino`
+2. MATLAB Visualization: `code/matlab/pid_visualization.m`
