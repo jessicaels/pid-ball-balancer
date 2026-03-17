@@ -49,3 +49,13 @@ Notes:
 Code Structure : 
 1. Arduino Code: `code/arduino/pid_ball_balancer.ino`
 2. MATLAB Visualization: `code/matlab/pid_visualization.m`
+
+# Documentation :
+1. ### Circuit Diagram
+![Setup](docs/circuitdiagram.png)
+
+### MATLAB Visualization
+![Visualization](docs/matlabvisual.png)
+
+### 🎯 Result
+![Result](docs/result.png)
