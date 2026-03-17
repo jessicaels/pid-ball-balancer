@@ -28,6 +28,23 @@ This project implements a PID (Proportional–Integral–Derivative) control sys
 6. Tune the PID parameters (Kp, Ki, Kd) to achieve stable balancing.
 7. Test and observe the system response to ensure the ball stays at the center.
 
+# Hardware Configuration
+
+| Component         | Pin on Component | Arduino Pin     |
+| ----------------- | ---------------- | --------------- |
+| Ultrasonic Sensor | VCC              | 5V              |
+| Ultrasonic Sensor | GND              | GND             |
+| Ultrasonic Sensor | TRIG             | Digital 2       |
+| Ultrasonic Sensor | ECHO             | Digital 3       |
+| Servo Motor       | VCC              | 5V              |
+| Servo Motor       | GND              | GND             |
+| Servo Motor       | Signal           | Digital 5 (PWM) |
+
+Notes:
+1. The ultrasonic sensor uses TRIG (D2) to send signals and ECHO (D3) to receive reflected waves for distance measurement.
+2. The servo motor is controlled using PWM signal on pin D5 to adjust the platform angle.
+3. Both components share the same 5V and GND from the Arduino to ensure stable operation.
+   
 # Code
 Code Structure : 
 1. Arduino Code: `code/arduino/pid_ball_balancer.ino`
